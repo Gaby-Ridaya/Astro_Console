@@ -82,21 +82,6 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Lancer simplement
-
-```bash
-python main.py
-```
-
-Entrez la date et l'heure de naissance
-Entrez le lieu de naissance
-
-Ce que vous verrez :
-
-- Une interface terminal stylée grâce à Rich.
-- Une fenêtre Matplotlib affichant le thème astrologique.
-
----
 
 ## ▶️ Utilisation
 
@@ -111,8 +96,6 @@ Entrez le lieu de naissance
 
 ### Ce que vous verrez :
 
-- Une interface terminal stylée grâce à Rich.
-- Une fenêtre Matplotlib affichant le thème astrologique.
 
 * Une interface terminal stylée grâce à **Rich**.
 * Une fenêtre Matplotlib affichant le thème astrologique.
