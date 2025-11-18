@@ -75,11 +75,26 @@ source env/bin/activate  # Linux/macOS
 env\Scripts\activate     # Windows
 ```
 
-3. Installez les dépendances :
 
 ```bash
 pip install -r requirements.txt
 ```
+
+---
+
+## ▶️ Lancer simplement
+
+```bash
+python main.py
+```
+
+Entrez la date et l'heure de naissance
+Entrez le lieu de naissance
+
+Ce que vous verrez :
+
+- Une interface terminal stylée grâce à Rich.
+- Une fenêtre Matplotlib affichant le thème astrologique.
 
 ---
 
@@ -91,7 +106,13 @@ Lancez simplement :
 python main.py
 ```
 
+Entrez la date et l'heure de naissance
+Entrez le lieu de naissance
+
 ### Ce que vous verrez :
+
+- Une interface terminal stylée grâce à Rich.
+- Une fenêtre Matplotlib affichant le thème astrologique.
 
 * Une interface terminal stylée grâce à **Rich**.
 * Une fenêtre Matplotlib affichant le thème astrologique.
