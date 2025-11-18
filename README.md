@@ -1,5 +1,5 @@
 # Astro Console
-![Exemple de roue astrologique](images/theme_astral_exemple.png)
+
 
 **Astro Console** est un projet Python modulaire permettant d'afficher des résultats astrologiques directement dans le terminal grâce à la bibliothèque **Rich**, tout en générant une **roue astrologique** sous forme de fenêtre graphique avec **Matplotlib**.
 
