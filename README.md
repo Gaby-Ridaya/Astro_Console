@@ -1,41 +1,34 @@
+# Astro Console
+![Exemple de roue astrologique](images/theme_astral_exemple.png)
 
-🌌 Astro Console
+**Astro Console** est un projet Python modulaire permettant d'afficher des résultats astrologiques directement dans le terminal grâce à la bibliothèque **Rich**, tout en générant une **roue astrologique** sous forme de fenêtre graphique avec **Matplotlib**.
 
-Application astrologique en console avec affichage graphique
+Le projet inclut un ensemble complet de modules spécialisés (planètes, aspects, maisons, roue, tradition, etc.) ainsi qu'une suite complète de tests unitaires avec **pytest** et **pytest-cov**.
 
-✨ Présentation
+---
+# Astro Console
 
-Astro Console est une application Python modulaire qui permet :
+![Exemple de roue astrologique](images/theme_astral_exemple.png)
 
-d’afficher les résultats astrologiques dans le terminal avec une interface colorée grâce à Rich,
+## ✨ Fonctionnalités principales
 
-de générer automatiquement une roue astrologique complète avec Matplotlib,
+* Affichage riche et coloré dans le terminal avec **Rich**.
+* Calculs astrologiques avec **pyswisseph** et modules dédiés.
+* Génération automatique d'une **roue astrologique** (Matplotlib).
+* Architecture **modulaire** et facilement extensible.
+* Suite de **tests unitaires complète** (pytest).
+* Structure claire et organisée.
 
-de calculer les positions planétaires avec pyswisseph,
+---
 
-et de valider toutes les fonctionnalités avec une suite complète de tests unitaires (pytest).
+## 📁 Structure du projet
 
-Le projet combine calculs astrologiques, graphique professionnel, architecture propre et bonne pratiques Python.
-
-🧰 Fonctionnalités
-
-Affichage clair et lisible dans le terminal
-
-Dessin automatique du thème astral (maisons, planètes, aspects…)
-
-Gestion des nœuds lunaires, aspects, angles, etc
-
-Calcul astrologique précis via pyswisseph
-
-Tests unitaires couvrant tous les modules
-
-Architecture modulaire et extensible 
-
-📂 Structure du projet
+```
 Astro_Console/
 ├── main.py
 ├── requirements.txt
 ├── module/
+│   ├── __init__.py
 │   ├── affichage.py
 │   ├── aspects.py
 │   ├── astrologia_tradition.py
@@ -44,8 +37,11 @@ Astro_Console/
 │   ├── rahu_ketu.py
 │   ├── roue.py
 │   ├── roue_v2.py
+│   ├── test_theme.py
 │   └── theme.py
 └── tests/
+    ├── __init__.py
+    ├── conftest.py
     ├── test_affichage.py
     ├── test_aspects.py
     ├── test_astrologia_tradition.py
@@ -56,38 +52,112 @@ Astro_Console/
     ├── test_roue_v2.py
     ├── test_theme.py
     └── test_utils.py
+```
 
-▶️ Lancer l’application
+---
+
+## 🚀 Installation
+
+Assurez-vous d'utiliser Python 3.10+.
+
+1. Clonez le dépôt :
+
+```bash
+git clone https://github.com/votre-nom/Astro_Console.git
+cd Astro_Console
+```
+
+2. Créez un environnement virtuel (optionnel mais recommandé) :
+
+```bash
+python -m venv env
+source env/bin/activate  # Linux/macOS
+env\Scripts\activate     # Windows
+```
+
+3. Installez les dépendances :
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Utilisation
+
+Lancez simplement :
+
+```bash
 python main.py
-Entrez la date et l'heure de naissance (YYYY-MM-DD HH:MM:SS) :
-Entrez le lieu de naissance :
+```
 
-L’application affichera :
+### Ce que vous verrez :
 
-un rendu console stylé
+* Une interface terminal stylée grâce à **Rich**.
+* Une fenêtre Matplotlib affichant le thème astrologique.
 
-une fenêtre graphique contenant le thème astral # Astro Console
+---
 
-![Exemple de roue astrologique](images/theme_astral_exemple.png)
+## 🧪 Tests
 
-🧪 Lancer les tests
+Lancer la suite complète de tests :
+
+```bash
 pytest
+```
 
+Avec le rapport de couverture :
 
-Avec couverture :
-
+```bash
 pytest --cov=module
+```
 
-🖼️ Aperçu
+---
 
-Le thème astrologique généré par l’application :
+## 🖼️ Captures d’écran
 
-📜 Licence
+Voici un aperçu du thème astral généré par l’application :
 
-MIT (modifiable selon ton choix)
+```markdown
+![Exemple de thème astral](./images/theme_astral_exemple.png)
+```
 
-🤝 Contributions
+*(Place l’image dans un dossier `images/` dans le dépôt GitHub.)*
 
-Les contributions sont les bienvenues !
-N’hésitez pas à proposer des idées, signaler un bug ou envoyer une PR.
->>>>>>> 626a637 (Initial commit Astro Console)
+---
+
+## 📦 Dépendances principales
+
+Parmi les bibliothèques utilisées :
+
+* `rich`
+* `matplotlib`
+* `pyswisseph`
+* `timezonefinder`
+* `geopy`
+* `numpy`
+* `pytest`
+
+La liste complète est disponible dans **requirements.txt**.
+
+---
+
+## 📜 Licence
+
+*(À compléter — MIT recommandé)*
+
+---
+
+## 🙌 Contribution
+
+Les contributions sont les bienvenues ! Vous pouvez :
+
+* ouvrir une *issue*
+* proposer une *pull request*
+* suggérer des améliorations
+
+---
+
+## ⭐ Remerciements
+
+Merci aux bibliothèques open-source qui rendent ce projet possible.
