@@ -1,0 +1,18 @@
+# Fichiers et dossiers à ignorer
+__pycache__/
+*.pyc
+env/
+*.pyo
+*.pyd
+*.swp
+.DS_Store
+.idea/
+.vscode/
+*.log
+# Pour pytest
+.cache/
+# Pour matplotlib
+*.png
+!images/theme_astral_exemple.png
+# Pour Jupyter
+.ipynb_checkpoints/
